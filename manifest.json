@@ -1,0 +1,24 @@
+{
+
+    "manifest_version": 2,
+    "name": "GPTLeak",
+    "version": "0.5",
+  
+    "description": "use to detect and replace credentials are copy paste to ChatGPT to avoid any leak",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+
+    "permissions": [
+        "find"
+    ],
+  
+    "content_scripts": [
+      {
+        "matches": ["https://chat.openai.com/*"],
+        "js": ["code/ObfuscateCredentials.js"]
+      }
+    ]
+  
+  }
