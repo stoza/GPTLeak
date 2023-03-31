@@ -1,7 +1,3 @@
-document.body.style.border = "5px solid red";
-
-//Plus qu a trouver le regex pattern qui va bien
-
 function replacer(match){
     /*
     Function use when a match is found.
